@@ -1,4 +1,4 @@
-package com.devsuperior.dslist.entities;
+package com.Lucas_Br4ga.gameList.entities;
 
 import java.util.Objects;
 
