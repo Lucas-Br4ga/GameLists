@@ -15,12 +15,13 @@ public class GameMinDTO {
 
     }
 
-    public GameMinDTO(Game Entity) {
-        this.id = Entity.getId();
-        this.title = Entity.getTitle();
-        this.year = Entity.getYear();
-        this.imgUrl = Entity.getImgUrl();
-        this.shortDescription = Entity.getShortDescription();
+    public GameMinDTO(Game entity) {
+        this.id = entity.getId();
+        this.title = entity.getTitle();
+        this.year = entity.getYear();
+        this.imgUrl = entity.getImgUrl();
+        this.shortDescription = entity.getShortDescription();
+        //BeanUtils.copyProperties(entity,this); // Mas ai tem que ter o get e tambem o set
     }
 
     public Long getId() {
